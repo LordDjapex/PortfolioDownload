@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My site</title>
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Nova+Square&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width initial-scale=0.1">
+        <script type="text/javascript">
+            window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
+        </script>
+    </head>
+    <body>
+        
+        <header>
+            <div id="mywebpage">
+                <p>My Webpage</p>
+            </div>
+            <section id="infoSection">
+                <a href="#aboutdiv">About me</a>
+                <a href="./download">Download</a>
+            </section>
+        </header>
+
+        <div id="video-background">
+        <div class="background-video">
+           <video id="videoid" preload="auto" autoplay="true" loop="loop" muted="muted">
+               <source src="/mp4/nebula.mp4" type="video/mp4">
+                Video not supported
+           </video>
+           <p id="welcomep" class="h2p">Welcome to my Webpage<br></p>
+           <p class ="h2p">Here you can find information about me and download some of the projects i've done for the online back end course i'm currently attending.
+               Note that unfortunately most of my projects were deleted or lost somewhere, so this is only a small portion.
+           </p>
+        </div>
+        </div>
+
+    
+
+        <div id="aboutdiv">
+            <h2>About Me (Click the image)</h2>
+            <div><p id="info">I'm a passionate, knowledge driven 20 year old. I specialize in back end development and prefer to work on functionality rather than aestetics. Throughout my life,
+                i've dabbled in many hobbies (i still do). Here are just a few of them: Literature, Creative Writing, Music, Psychology, Philosphy, Working out, History, Math,
+                Gaming, Reading Manga.</p>
+                <img src="/icons/me.jpg" onclick="aboutMeInfo()">
+            </div>
+        </div>
+
+        <section id="listsec">
+            <ul>List of skills
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>Hibernate</li>
+                <li>Spring Framework</li>
+                <li>JavaFX</li>
+                <li>Java Swing</li>
+                <li>HTML5</li>
+                <li>PHP</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>OOP</li>
+                <li>REST</li>
+                <li>Arduino</li>
+                <li>Critical Thinking</li>
+                <li>Guitar Skillz</li>
+                <li>Interpersonal Skills</li>
+                <li>Creative Writing</li>
+                <li>Creativity</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Adaptibility</li>
+                <li>Organization skills</li>
+            </ul>
+        </section>
+        
+
+
+
+        <footer >
+                <p>Created by Nikola Pudja</p>
+                <img src="/icons/email.png" alt="emailIcon" id="email">
+                <p>nikolapudja@gmail.com</p>
+                <a href="https://www.linkedin.com/in/nikola-pu%C4%91a-57b07118b/">
+                    <img src="/icons/linkedin.png" alt="Linkedin" id="linkedin">
+                </a>
+        </footer>
+
+        <script type="text/javascript">
+            let info = document.getElementById("info");
+            info.style.visibility = "visible";
+            let imageClicked = false;
+            function aboutMeInfo() {
+                if (!imageClicked) {
+                    info.style.visibility = "hidden";
+                    imageClicked = true;
+                }
+                else {
+                    info.style.visibility = "visible";
+                    imageClicked = false;
+                }
+            }
+        </script>
+    </body>
+</html>

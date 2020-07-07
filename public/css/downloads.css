@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-width: 100%;
+}
+
+body {
+    background-color: #2D81C4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    top:0%;
+    left: 0%;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    background-color: #04488A;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+#mywebpage {
+    display: flexbox;
+    font-size: 40px;
+    padding: 0 0 0 30px;
+    font-family: 'Faster One', cursive;
+    font-weight: 100;
+    position: relative;
+    top:30%;
+    left:2%;
+}
+
+#infoSection {
+    flex: 0 0 30%;
+    margin-top: 40px;
+}
+
+#infoSection a {
+    position: relative;
+    top: 15%;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-right: none;
+    font-size: 22px;
+    text-decoration: underline;
+    font-family: 'Nova Square', cursive;
+}
+
+#infoSection a:visited, a:link {
+    color: black;
+}
+
+/*table */
+#project {
+    margin-top: 200px;
+}
+
+.table, .table th, .table td {
+    width: 80%;
+    margin: auto;
+    border: 5px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+td a {
+    text-decoration: underline;
+    color:blue;
+}
+
+td a:visited {
+    color: purple;
+}
+
+
+/* footer */
+
+footer {
+    left: 0%;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: #04488A;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    bottom: 0%;
+    z-index: 20;
+}
+
+footer p{
+    font-family: 'Nova Square', cursive;
+    margin: 25px;
+    font-size: 20px;
+}
+
+ img {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+}
+
+#email {
+    margin: auto;
+    justify-self: end;
+    margin-right: 0%;
+}
+
+#linkedin {
+    margin-top: 17px;
+    margin-right: 50px;
+}
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        #linkedin {
+            margin-top: 17px;
+            padding-right: 400%;
+        }
+    }
